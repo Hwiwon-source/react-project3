@@ -48,7 +48,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
   const search = (e) => {
     if (e.key === "Enter") {
       // Enter 키가 눌렸을 때 실행할 코드
-      // 입력한 검색어를 읽어온 후
+      // 1. 입력한 검색어를 읽어온 후
       // url을 변경한다.
       let keyword = e.target.value;
       navigate(`/?q=${keyword}`);
@@ -89,7 +89,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
             {menuList.map((menu, idx) => {
               return (
                 <li className="nav-menu" key={idx}>
-                  <Link className="nav-link" to="/login">
+                  <Link className="nav-link" to="/">
                     {menu}
                   </Link>
                 </li>

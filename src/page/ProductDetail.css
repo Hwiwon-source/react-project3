@@ -53,9 +53,16 @@
   background-color: #444444; 
 }
 
-.product-dis {
+.product-des {
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.spinner-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
